@@ -29,6 +29,11 @@ under CakePHP 2.x. Here's the changes code:
     var$components=array('Session');
     var$Controller=null;
     
+    /*Error
+    The write documentation for the components signature acording to cookBook: is
+    public function inicialize (Controller $controller) NOT  functioninitialize(&$controller)
+    
+    */
     functioninitialize(&$controller){
     $this->Controller=&$controller;
     
